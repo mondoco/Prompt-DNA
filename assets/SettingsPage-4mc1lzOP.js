@@ -1,1 +1,273 @@
-import{t as e,u as t}from"./Button-C4Bn58RL.js";import{c as n,d as r,f as i,i as a,r as o,v as s,w as c}from"./ui-vendor-D_9MYQQl.js";import{t as l}from"./Card-DyMLOe46.js";import{a as u,i as d,n as f,r as p}from"./index-BSloE1tL.js";import{r as m}from"./markdown-vendor-aHERgz_x.js";import{t as h}from"./promptStore-DitNHxN_.js";import{t as g}from"./wizardStore-pcJRh5oO.js";var _=m();function v(){let{profile:t,setProfile:n,enable:r,disable:i,reset:a}=f();return(0,_.jsxs)(l,{padding:`lg`,children:[(0,_.jsxs)(`div`,{className:`mb-4 flex items-center justify-between`,children:[(0,_.jsx)(`h2`,{className:`text-lg font-bold text-text-primary`,children:`ملفك الشخصي`}),(0,_.jsx)(e,{size:`sm`,variant:t.enabled?`danger`:`primary`,onClick:t.enabled?i:r,children:t.enabled?`إيقاف`:`تفعيل`})]}),(0,_.jsx)(`p`,{className:`mb-4 text-xs text-text-muted`,children:`عند التفعيل، تُملأ الحقول الفارغة تلقائياً من بياناتك. يمكنك تعطيله في أي وقت.`}),(0,_.jsxs)(`div`,{className:`grid gap-3 sm:grid-cols-2`,children:[(0,_.jsx)(`input`,{type:`text`,placeholder:`اسمك أو اسم علامتك`,value:t.name||``,onChange:e=>n({name:e.target.value}),className:`rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`}),(0,_.jsx)(`input`,{type:`text`,placeholder:`المجال (تقنية، طبخ، صحة...)`,value:t.niche||``,onChange:e=>n({niche:e.target.value}),className:`rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`}),(0,_.jsx)(`input`,{type:`text`,placeholder:`الجمهور الافتراضي`,value:t.defaultAudience||``,onChange:e=>n({defaultAudience:e.target.value}),className:`rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`}),(0,_.jsx)(`input`,{type:`text`,placeholder:`النبرة المفضلة`,value:t.preferredTone||``,onChange:e=>n({preferredTone:e.target.value}),className:`rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`}),(0,_.jsx)(`input`,{type:`text`,placeholder:`المنصة الأساسية`,value:t.mainPlatform||``,onChange:e=>n({mainPlatform:e.target.value}),className:`rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`}),(0,_.jsx)(`input`,{type:`text`,placeholder:`هدفك الأساسي`,value:t.primaryGoal||``,onChange:e=>n({primaryGoal:e.target.value}),className:`rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`})]}),(0,_.jsx)(`div`,{className:`mt-4 flex justify-end`,children:(0,_.jsx)(e,{size:`sm`,variant:`ghost`,onClick:a,children:`مسح الملف`})})]})}function y(){let m=t(),{lang:y,setLang:b}=p(),{isDark:x}=d(),{theme:S,setTheme:C}=u(),{history:w,clearHistory:T}=h(),{reset:E}=g(),{reset:D}=f();return(0,_.jsxs)(`div`,{className:`mx-auto max-w-3xl px-4 py-10 sm:px-6`,children:[(0,_.jsxs)(`div`,{className:`mb-6 flex items-center gap-2`,children:[(0,_.jsxs)(e,{variant:`ghost`,size:`sm`,onClick:()=>m(`/`),children:[(0,_.jsx)(c,{size:16}),` رجوع`]}),(0,_.jsx)(`h1`,{className:`text-2xl font-bold text-gradient`,children:`الإعدادات`})]}),(0,_.jsxs)(`div`,{className:`space-y-4`,children:[(0,_.jsx)(v,{}),(0,_.jsxs)(l,{padding:`lg`,children:[(0,_.jsxs)(`h2`,{className:`mb-3 flex items-center gap-2 text-lg font-bold text-text-primary`,children:[x?(0,_.jsx)(r,{size:18}):(0,_.jsx)(a,{size:18}),`المظهر`]}),(0,_.jsxs)(`div`,{className:`flex gap-2`,children:[(0,_.jsxs)(e,{variant:S===`dark`?`primary`:`secondary`,size:`sm`,onClick:()=>C(`dark`),children:[(0,_.jsx)(r,{size:14}),` داكن`]}),(0,_.jsxs)(e,{variant:S===`light`?`primary`:`secondary`,size:`sm`,onClick:()=>C(`light`),children:[(0,_.jsx)(a,{size:14}),` فاتح`]})]})]}),(0,_.jsxs)(l,{padding:`lg`,children:[(0,_.jsxs)(`h2`,{className:`mb-3 flex items-center gap-2 text-lg font-bold text-text-primary`,children:[(0,_.jsx)(i,{size:18}),` اللغة`]}),(0,_.jsxs)(`div`,{className:`flex gap-2`,children:[(0,_.jsx)(e,{variant:y===`ar`?`primary`:`secondary`,size:`sm`,onClick:()=>b(`ar`),children:`العربية`}),(0,_.jsx)(e,{variant:y===`en`?`primary`:`secondary`,size:`sm`,onClick:()=>b(`en`),children:`English`})]})]}),(0,_.jsxs)(l,{padding:`lg`,children:[(0,_.jsxs)(`h2`,{className:`mb-3 flex items-center gap-2 text-lg font-bold text-text-primary`,children:[(0,_.jsx)(s,{size:18}),` البيانات`]}),(0,_.jsxs)(`div`,{className:`space-y-3`,children:[(0,_.jsxs)(`div`,{className:`flex items-center justify-between rounded-lg border border-border bg-surface p-3`,children:[(0,_.jsxs)(`div`,{children:[(0,_.jsx)(`p`,{className:`text-sm font-bold text-text-primary`,children:`سجل البرومبتات`}),(0,_.jsxs)(`p`,{className:`text-xs text-text-muted`,children:[w.length,` برومبت محفوظ`]})]}),(0,_.jsxs)(e,{variant:`secondary`,size:`sm`,onClick:T,disabled:w.length===0,children:[(0,_.jsx)(o,{size:14}),` مسح`]})]}),(0,_.jsxs)(`div`,{className:`flex items-center justify-between rounded-lg border border-error/40 bg-error/5 p-3`,children:[(0,_.jsxs)(`div`,{children:[(0,_.jsx)(`p`,{className:`text-sm font-bold text-error`,children:`إعادة تعيين كاملة`}),(0,_.jsx)(`p`,{className:`text-xs text-text-muted`,children:`مسح كل شيء — غير قابل للتراجع`})]}),(0,_.jsxs)(e,{variant:`danger`,size:`sm`,onClick:()=>{confirm(`سيتم مسح كل الإعدادات والسجل والبروفايل. هل أنت متأكد؟`)&&(E(),D(),T(),localStorage.clear(),m(`/`))},children:[(0,_.jsx)(n,{size:14}),` إعادة تعيين`]})]})]})]}),(0,_.jsxs)(l,{padding:`lg`,children:[(0,_.jsx)(`h2`,{className:`mb-2 text-lg font-bold text-text-primary`,children:`حول التطبيق`}),(0,_.jsx)(`p`,{className:`text-sm text-text-secondary`,children:`Prompt DNA — الإصدار 1.0.0`}),(0,_.jsx)(`p`,{className:`mt-2 text-xs text-text-muted`,children:`مبني على كتاب «أهم 50 مصطلح في عالم صناعة المحتوى» — إعداد هاني شاكر حسن شحاتة`})]})]})]})}export{y as default};
+import { t as e, u as t } from "./Button-C4Bn58RL.js";
+import {
+  c as n,
+  d as r,
+  f as i,
+  i as a,
+  r as o,
+  v as s,
+  w as c,
+} from "./ui-vendor-D_9MYQQl.js";
+import { t as l } from "./Card-DyMLOe46.js";
+import { a as u, i as d, n as f, r as p } from "./index-BSloE1tL.js";
+import { r as m } from "./markdown-vendor-aHERgz_x.js";
+import { t as h } from "./promptStore-DitNHxN_.js";
+import { t as g } from "./wizardStore-pcJRh5oO.js";
+var _ = m();
+function v() {
+  let { profile: t, setProfile: n, enable: r, disable: i, reset: a } = f();
+  return (0, _.jsxs)(l, {
+    padding: `lg`,
+    children: [
+      (0, _.jsxs)(`div`, {
+        className: `mb-4 flex items-center justify-between`,
+        children: [
+          (0, _.jsx)(`h2`, {
+            className: `text-lg font-bold text-text-primary`,
+            children: `ملفك الشخصي`,
+          }),
+          (0, _.jsx)(e, {
+            size: `sm`,
+            variant: t.enabled ? `danger` : `primary`,
+            onClick: t.enabled ? i : r,
+            children: t.enabled ? `إيقاف` : `تفعيل`,
+          }),
+        ],
+      }),
+      (0, _.jsx)(`p`, {
+        className: `mb-4 text-xs text-text-muted`,
+        children: `عند التفعيل، تُملأ الحقول الفارغة تلقائياً من بياناتك. يمكنك تعطيله في أي وقت.`,
+      }),
+      (0, _.jsxs)(`div`, {
+        className: `grid gap-3 sm:grid-cols-2`,
+        children: [
+          (0, _.jsx)(`input`, {
+            type: `text`,
+            placeholder: `اسمك أو اسم علامتك`,
+            value: t.name || ``,
+            onChange: (e) => n({ name: e.target.value }),
+            className: `rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`,
+          }),
+          (0, _.jsx)(`input`, {
+            type: `text`,
+            placeholder: `المجال (تقنية، طبخ، صحة...)`,
+            value: t.niche || ``,
+            onChange: (e) => n({ niche: e.target.value }),
+            className: `rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`,
+          }),
+          (0, _.jsx)(`input`, {
+            type: `text`,
+            placeholder: `الجمهور الافتراضي`,
+            value: t.defaultAudience || ``,
+            onChange: (e) => n({ defaultAudience: e.target.value }),
+            className: `rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`,
+          }),
+          (0, _.jsx)(`input`, {
+            type: `text`,
+            placeholder: `النبرة المفضلة`,
+            value: t.preferredTone || ``,
+            onChange: (e) => n({ preferredTone: e.target.value }),
+            className: `rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`,
+          }),
+          (0, _.jsx)(`input`, {
+            type: `text`,
+            placeholder: `المنصة الأساسية`,
+            value: t.mainPlatform || ``,
+            onChange: (e) => n({ mainPlatform: e.target.value }),
+            className: `rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`,
+          }),
+          (0, _.jsx)(`input`, {
+            type: `text`,
+            placeholder: `هدفك الأساسي`,
+            value: t.primaryGoal || ``,
+            onChange: (e) => n({ primaryGoal: e.target.value }),
+            className: `rounded-lg border border-border bg-surface p-2 text-sm text-text-primary`,
+          }),
+        ],
+      }),
+      (0, _.jsx)(`div`, {
+        className: `mt-4 flex justify-end`,
+        children: (0, _.jsx)(e, {
+          size: `sm`,
+          variant: `ghost`,
+          onClick: a,
+          children: `مسح الملف`,
+        }),
+      }),
+    ],
+  });
+}
+function y() {
+  let m = t(),
+    { lang: y, setLang: b } = p(),
+    { isDark: x } = d(),
+    { theme: S, setTheme: C } = u(),
+    { history: w, clearHistory: T } = h(),
+    { reset: E } = g(),
+    { reset: D } = f();
+  return (0, _.jsxs)(`div`, {
+    className: `mx-auto max-w-3xl px-4 py-10 sm:px-6`,
+    children: [
+      (0, _.jsxs)(`div`, {
+        className: `mb-6 flex items-center gap-2`,
+        children: [
+          (0, _.jsxs)(e, {
+            variant: `ghost`,
+            size: `sm`,
+            onClick: () => m(`/`),
+            children: [(0, _.jsx)(c, { size: 16 }), ` رجوع`],
+          }),
+          (0, _.jsx)(`h1`, {
+            className: `text-2xl font-bold text-gradient`,
+            children: `الإعدادات`,
+          }),
+        ],
+      }),
+      (0, _.jsxs)(`div`, {
+        className: `space-y-4`,
+        children: [
+          (0, _.jsx)(v, {}),
+          (0, _.jsxs)(l, {
+            padding: `lg`,
+            children: [
+              (0, _.jsxs)(`h2`, {
+                className: `mb-3 flex items-center gap-2 text-lg font-bold text-text-primary`,
+                children: [
+                  x ? (0, _.jsx)(r, { size: 18 }) : (0, _.jsx)(a, { size: 18 }),
+                  `المظهر`,
+                ],
+              }),
+              (0, _.jsxs)(`div`, {
+                className: `flex gap-2`,
+                children: [
+                  (0, _.jsxs)(e, {
+                    variant: S === `dark` ? `primary` : `secondary`,
+                    size: `sm`,
+                    onClick: () => C(`dark`),
+                    children: [(0, _.jsx)(r, { size: 14 }), ` داكن`],
+                  }),
+                  (0, _.jsxs)(e, {
+                    variant: S === `light` ? `primary` : `secondary`,
+                    size: `sm`,
+                    onClick: () => C(`light`),
+                    children: [(0, _.jsx)(a, { size: 14 }), ` فاتح`],
+                  }),
+                ],
+              }),
+            ],
+          }),
+          (0, _.jsxs)(l, {
+            padding: `lg`,
+            className: `hidden`,
+            children: [
+              (0, _.jsxs)(`h2`, {
+                className: `mb-3 flex items-center gap-2 text-lg font-bold text-text-primary`,
+                children: [(0, _.jsx)(i, { size: 18 }), ` اللغة`],
+              }),
+              (0, _.jsxs)(`div`, {
+                className: `flex gap-2`,
+                children: [
+                  (0, _.jsx)(e, {
+                    variant: y === `ar` ? `primary` : `secondary`,
+                    size: `sm`,
+                    onClick: () => b(`ar`),
+                    children: `العربية`,
+                  }),
+                  (0, _.jsx)(e, {
+                    variant: y === `en` ? `primary` : `secondary`,
+                    size: `sm`,
+                    onClick: () => b(`en`),
+                    children: `English`,
+                  }),
+                ],
+              }),
+            ],
+          }),
+          (0, _.jsxs)(l, {
+            padding: `lg`,
+            children: [
+              (0, _.jsxs)(`h2`, {
+                className: `mb-3 flex items-center gap-2 text-lg font-bold text-text-primary`,
+                children: [(0, _.jsx)(s, { size: 18 }), ` البيانات`],
+              }),
+              (0, _.jsxs)(`div`, {
+                className: `space-y-3`,
+                children: [
+                  (0, _.jsxs)(`div`, {
+                    className: `flex items-center justify-between rounded-lg border border-border bg-surface p-3`,
+                    children: [
+                      (0, _.jsxs)(`div`, {
+                        children: [
+                          (0, _.jsx)(`p`, {
+                            className: `text-sm font-bold text-text-primary`,
+                            children: `سجل البرومبتات`,
+                          }),
+                          (0, _.jsxs)(`p`, {
+                            className: `text-xs text-text-muted`,
+                            children: [w.length, ` برومبت محفوظ`],
+                          }),
+                        ],
+                      }),
+                      (0, _.jsxs)(e, {
+                        variant: `secondary`,
+                        size: `sm`,
+                        onClick: T,
+                        disabled: w.length === 0,
+                        children: [(0, _.jsx)(o, { size: 14 }), ` مسح`],
+                      }),
+                    ],
+                  }),
+                  (0, _.jsxs)(`div`, {
+                    className: `flex items-center justify-between rounded-lg border border-error/40 bg-error/5 p-3`,
+                    children: [
+                      (0, _.jsxs)(`div`, {
+                        children: [
+                          (0, _.jsx)(`p`, {
+                            className: `text-sm font-bold text-error`,
+                            children: `إعادة تعيين كاملة`,
+                          }),
+                          (0, _.jsx)(`p`, {
+                            className: `text-xs text-text-muted`,
+                            children: `مسح كل شيء — غير قابل للتراجع`,
+                          }),
+                        ],
+                      }),
+                      (0, _.jsxs)(e, {
+                        variant: `danger`,
+                        size: `sm`,
+                        onClick: () => {
+                          confirm(
+                            `سيتم مسح كل الإعدادات والسجل والبروفايل. هل أنت متأكد؟`,
+                          ) && (E(), D(), T(), localStorage.clear(), m(`/`));
+                        },
+                        children: [(0, _.jsx)(n, { size: 14 }), ` إعادة تعيين`],
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+            ],
+          }),
+          (0, _.jsxs)(l, {
+            padding: `lg`,
+            children: [
+              (0, _.jsx)(`h2`, {
+                className: `mb-2 text-lg font-bold text-text-primary`,
+                children: `حول التطبيق`,
+              }),
+              (0, _.jsx)(`p`, {
+                className: `text-sm text-text-secondary`,
+                children: `Prompt DNA — الإصدار 1.0.0`,
+              }),
+              (0, _.jsx)(`p`, {
+                className: `mt-2 text-xs text-text-muted`,
+                children: `مبني على كتاب «أهم 50 مصطلح في عالم صناعة المحتوى» — إعداد هاني شاكر حسن شحاتة`,
+              }),
+            ],
+          }),
+        ],
+      }),
+    ],
+  });
+}
+export { y as default };

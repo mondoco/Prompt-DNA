@@ -9,7 +9,7 @@ _منصة تولّد برومبتات خارقة لصنّاع المحتوى —
 [![PWA](https://img.shields.io/badge/PWA-installable-8B5CF6?style=flat-square)](https://web.dev/progressive-web-apps/)
 [![Language](https://img.shields.io/badge/Language-عربي%20%2F%20English-06B6D4?style=flat-square)](#-التطبيق-يدعم-العربية-والإنجليزية)
 
-### [🚀 افتح التطبيق الآن](https://YOUR-USERNAME.github.io/YOUR-REPO/)
+### [🚀 افتح التطبيق الآن](https://mondoco.github.io/Prompt-DNA/)
 
 </div>
 
@@ -82,7 +82,7 @@ _منصة تولّد برومبتات خارقة لصنّاع المحتوى —
 ### الطريقة الأولى — الاستخدام المباشر (الأسهل)
 
 افتح الرابط:
-https://YOUR-USERNAME.github.io/YOUR-REPO/
+[Prompt DNA](https://mondoco.github.io/Prompt-DNA/)
 
 
 واستخدمه كما تستخدم أي موقع.

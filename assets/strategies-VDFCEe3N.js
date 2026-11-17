@@ -1,0 +1,483 @@
+// src/data/strategies.json
+var version = "1.0.0";
+var description = "Strategic narrative patterns. The Strategy Planner picks ONE based on user context, then TermSelector uses it to filter and prioritize terms.";
+var strategies = [
+	{
+		"id": "problem-solution",
+		"name": {
+			"ar": "المشكلة والحل",
+			"en": "Problem-Solution"
+		},
+		"description": "Lead with a pain point, amplify it, then solve it. Best for awareness and conversion.",
+		"narrative_flow": [
+			"hook_pain",
+			"agitate",
+			"reveal",
+			"solution",
+			"cta"
+		],
+		"best_for_goals": [
+			"توعية وزيادة معرفة",
+			"تشجيع الجمهور على البدء",
+			"الترويج لمنتج أو خدمة"
+		],
+		"best_for_tones": [
+			"جدي احترافي",
+			"تعليمي مبسط",
+			"صادم ومثير للجدل"
+		],
+		"best_for_content_types": [
+			"short-video",
+			"long-video",
+			"post"
+		],
+		"required_term_categories": [
+			"hooks",
+			"writing-hacks",
+			"cta"
+		],
+		"recommended_term_ids": [
+			2,
+			31,
+			33,
+			38,
+			41,
+			42
+		],
+		"avoid_term_ids": [],
+		"framework_anchors": [
+			"PAS",
+			"Problem-Agitate-Solve",
+			"Pain-Driven Hook"
+		]
+	},
+	{
+		"id": "transformation-story",
+		"name": {
+			"ar": "قصة التحول",
+			"en": "Transformation Story"
+		},
+		"description": "Personal or customer journey from weakness to strength. Builds trust and emotional connection.",
+		"narrative_flow": [
+			"relatable_moment",
+			"struggle",
+			"turning_point",
+			"transformation",
+			"invitation"
+		],
+		"best_for_goals": [
+			"بناء براند شخصي",
+			"توليد تفاعل",
+			"توعية وزيادة معرفة"
+		],
+		"best_for_tones": ["تحفيزي", "هادئ وودود"],
+		"best_for_content_types": [
+			"long-video",
+			"article",
+			"story",
+			"podcast"
+		],
+		"required_term_categories": [
+			"storytelling",
+			"hooks",
+			"camera-presence"
+		],
+		"recommended_term_ids": [
+			11,
+			12,
+			14,
+			19,
+			38,
+			40
+		],
+		"avoid_term_ids": [15],
+		"framework_anchors": [
+			"Hero's Journey",
+			"Character Development",
+			"Moral/Lesson"
+		]
+	},
+	{
+		"id": "contrarian-truth",
+		"name": {
+			"ar": "الحقيقة المعاكسة",
+			"en": "Contrarian Truth"
+		},
+		"description": "Challenge a common belief, prove it wrong, offer the alternative. High virality.",
+		"narrative_flow": [
+			"shocking_claim",
+			"common_belief",
+			"why_it_fails",
+			"the_real_truth",
+			"action"
+		],
+		"best_for_goals": [
+			"زيادة المشاهدات والمتابعين",
+			"توليد تفاعل",
+			"بناء براند شخصي"
+		],
+		"best_for_tones": ["صادم ومثير للجدل", "كوميدي"],
+		"best_for_content_types": [
+			"short-video",
+			"post",
+			"carousel"
+		],
+		"required_term_categories": [
+			"hooks",
+			"writing-hacks",
+			"cta"
+		],
+		"recommended_term_ids": [
+			31,
+			32,
+			33,
+			35,
+			6,
+			44
+		],
+		"avoid_term_ids": [11, 40],
+		"framework_anchors": [
+			"Pattern Interrupt",
+			"Shock Value",
+			"Curiosity Gap"
+		]
+	},
+	{
+		"id": "tutorial-breakdown",
+		"name": {
+			"ar": "الشرح خطوة بخطوة",
+			"en": "Tutorial Breakdown"
+		},
+		"description": "Teach a specific skill with structured steps. Best for education and authority-building.",
+		"narrative_flow": [
+			"why_it_matters",
+			"overview",
+			"step_1",
+			"step_2",
+			"step_3",
+			"recap",
+			"cta"
+		],
+		"best_for_goals": [
+			"توعية وزيادة معرفة",
+			"الترويج لكورس",
+			"بناء براند شخصي"
+		],
+		"best_for_tones": ["تعليمي مبسط", "جدي احترافي"],
+		"best_for_content_types": [
+			"long-video",
+			"article",
+			"newsletter",
+			"podcast"
+		],
+		"required_term_categories": [
+			"writing-hacks",
+			"hooks",
+			"cta",
+			"editing"
+		],
+		"recommended_term_ids": [
+			1,
+			4,
+			8,
+			31,
+			50,
+			52,
+			61,
+			62
+		],
+		"avoid_term_ids": [15, 35],
+		"framework_anchors": [
+			"AIDA",
+			"WIIFM",
+			"Segment Your Content"
+		]
+	},
+	{
+		"id": "social-proof-authority",
+		"name": {
+			"ar": "الدليل الاجتماعي والسلطة",
+			"en": "Social Proof + Authority"
+		},
+		"description": "Lead with numbers, testimonials, and credentials. Best for high-trust products.",
+		"narrative_flow": [
+			"proof_hook",
+			"why_trust_me",
+			"evidence",
+			"offer",
+			"urgency_cta"
+		],
+		"best_for_goals": ["الترويج لمنتج أو خدمة", "الترويج لكورس"],
+		"best_for_tones": ["جدي احترافي"],
+		"best_for_content_types": [
+			"long-video",
+			"article",
+			"post"
+		],
+		"required_term_categories": [
+			"cta",
+			"writing-hacks",
+			"camera-presence"
+		],
+		"recommended_term_ids": [
+			3,
+			7,
+			10,
+			43,
+			44,
+			45
+		],
+		"avoid_term_ids": [32, 35],
+		"framework_anchors": [
+			"Social Proof CTA",
+			"FAB",
+			"Benefit-Driven Headlines",
+			"Urgency CTA"
+		]
+	},
+	{
+		"id": "emotional-resonance",
+		"name": {
+			"ar": "الرنين العاطفي",
+			"en": "Emotional Resonance"
+		},
+		"description": "Target a specific emotion (fear, hope, nostalgia) and build around it. High shareability.",
+		"narrative_flow": [
+			"emotional_hook",
+			"relatable_scene",
+			"shared_feeling",
+			"perspective_shift",
+			"invitation"
+		],
+		"best_for_goals": [
+			"توليد تفاعل",
+			"بناء براند شخصي",
+			"توعية وزيادة معرفة"
+		],
+		"best_for_tones": [
+			"تحفيزي",
+			"هادئ وودود",
+			"كوميدي"
+		],
+		"best_for_content_types": [
+			"short-video",
+			"story",
+			"post",
+			"carousel"
+		],
+		"required_term_categories": ["hooks", "storytelling"],
+		"recommended_term_ids": [
+			31,
+			38,
+			39,
+			40,
+			5
+		],
+		"avoid_term_ids": [43, 44],
+		"framework_anchors": [
+			"Emotional Hook",
+			"Relatable Scenario",
+			"Anecdotal Lead"
+		]
+	},
+	{
+		"id": "listicle-countdown",
+		"name": {
+			"ar": "قائمة العد التنازلي",
+			"en": "Listicle Countdown"
+		},
+		"description": "Ranked list of items building to the #1. High retention because viewers stay for the best.",
+		"narrative_flow": [
+			"why_this_list",
+			"item_5",
+			"item_4",
+			"item_3",
+			"item_2",
+			"item_1_climax",
+			"cta"
+		],
+		"best_for_goals": ["زيادة المشاهدات والمتابعين", "توليد تفاعل"],
+		"best_for_tones": [
+			"تعليمي مبسط",
+			"كوميدي",
+			"تحفيزي"
+		],
+		"best_for_content_types": [
+			"short-video",
+			"long-video",
+			"carousel",
+			"post"
+		],
+		"required_term_categories": [
+			"hooks",
+			"writing-hacks",
+			"cta"
+		],
+		"recommended_term_ids": [
+			8,
+			31,
+			33,
+			34,
+			52,
+			56,
+			57,
+			61
+		],
+		"avoid_term_ids": [11, 14],
+		"framework_anchors": [
+			"Open Loops",
+			"Bucket Brigades",
+			"Maintain Pace"
+		]
+	},
+	{
+		"id": "myth-busting",
+		"name": {
+			"ar": "كسر الخرافات",
+			"en": "Myth Busting"
+		},
+		"description": "List common myths, debunk each with evidence. Builds authority and surprises.",
+		"narrative_flow": [
+			"myth_hook",
+			"myth_1",
+			"truth_1",
+			"myth_2",
+			"truth_2",
+			"myth_3",
+			"truth_3",
+			"cta"
+		],
+		"best_for_goals": ["توعية وزيادة معرفة", "بناء براند شخصي"],
+		"best_for_tones": [
+			"جدي احترافي",
+			"صادم ومثير للجدل",
+			"تعليمي مبسط"
+		],
+		"best_for_content_types": [
+			"long-video",
+			"article",
+			"carousel",
+			"post"
+		],
+		"required_term_categories": [
+			"writing-hacks",
+			"hooks",
+			"storytelling"
+		],
+		"recommended_term_ids": [
+			2,
+			8,
+			15,
+			31,
+			32,
+			35,
+			61
+		],
+		"avoid_term_ids": [39],
+		"framework_anchors": [
+			"PAS",
+			"Pattern Interrupt",
+			"Open Loops"
+		]
+	},
+	{
+		"id": "behind-the-scenes",
+		"name": {
+			"ar": "من خلف الكواليس",
+			"en": "Behind the Scenes"
+		},
+		"description": "Show the process, the mess, the reality. Authenticity drives connection.",
+		"narrative_flow": [
+			"curiosity_moment",
+			"raw_reveal",
+			"process",
+			"challenge",
+			"insight",
+			"invitation"
+		],
+		"best_for_goals": ["بناء براند شخصي", "توليد تفاعل"],
+		"best_for_tones": ["هادئ وودود", "كوميدي"],
+		"best_for_content_types": [
+			"short-video",
+			"story",
+			"long-video"
+		],
+		"required_term_categories": [
+			"storytelling",
+			"camera-presence",
+			"editing"
+		],
+		"recommended_term_ids": [
+			17,
+			21,
+			25,
+			26,
+			40,
+			48,
+			56
+		],
+		"avoid_term_ids": [
+			43,
+			44,
+			45
+		],
+		"framework_anchors": [
+			"Anecdotal Lead",
+			"On-Camera Persona",
+			"B-Roll"
+		]
+	},
+	{
+		"id": "before-after-bridge",
+		"name": {
+			"ar": "قبل/بعد/الجسر",
+			"en": "Before-After-Bridge"
+		},
+		"description": "Show life before, life after, and the bridge (your solution). Classic persuasion.",
+		"narrative_flow": [
+			"before_scene",
+			"pain_amplified",
+			"after_scene",
+			"the_bridge",
+			"cta"
+		],
+		"best_for_goals": [
+			"الترويج لمنتج أو خدمة",
+			"الترويج لكورس",
+			"تشجيع الجمهور على البدء"
+		],
+		"best_for_tones": ["تحفيزي", "جدي احترافي"],
+		"best_for_content_types": [
+			"short-video",
+			"post",
+			"carousel"
+		],
+		"required_term_categories": [
+			"writing-hacks",
+			"storytelling",
+			"cta"
+		],
+		"recommended_term_ids": [
+			1,
+			2,
+			4,
+			11,
+			42,
+			43
+		],
+		"avoid_term_ids": [],
+		"framework_anchors": [
+			"AIDA",
+			"PAS",
+			"Hero's Journey"
+		]
+	}
+];
+var strategies_default = {
+	version,
+	description,
+	strategies
+};
+export { strategies_default as default, description, strategies, version };
+
+//# sourceMappingURL=strategies-VDFCEe3N.js.map

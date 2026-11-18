@@ -116,21 +116,27 @@ _منصة تولّد برومبتات خارقة لصنّاع المحتوى —
 <div align="center">
 مدخلاتك من الـ Wizard
 
+
 ↓
 
 TermSelector → يختار المصطلحات ذات الصلة بالأوزان
+
 ↓
 
 ProtocolComposer → يحقن بروتوكول سلوك الخبير
+
 ↓
 
 TemplateRenderer → يملأ قالب المهمة
+
 ↓
 
 ModelOptimizer → يعدّل حسب النموذج (ChatGPT/Claude/...)
+
 ↓
 
 ChainingComposer (اختياري) → يحوّل لسلسلة 3 مراحل
+
 ↓
 
 Master Prompt جاهز للنسخ

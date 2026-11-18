@@ -1,0 +1,267 @@
+// src/data/term-compatibility.json
+var version = "1.0.0";
+var description = "Pairwise compatibility between terms. Positive = synergy, negative = conflict. Ranges from -1.0 to +1.0. Default is 0.2 (neutral) if not listed.";
+var default_compatibility = .2;
+var pairs = [
+	{
+		"a": 31,
+		"b": 33,
+		"score": .95,
+		"reason": "Hook Sentence + Curiosity Gap = perfect opening"
+	},
+	{
+		"a": 31,
+		"b": 34,
+		"score": .9,
+		"reason": "Hook Sentence + Open Loop = strong retention"
+	},
+	{
+		"a": 31,
+		"b": 38,
+		"score": .92,
+		"reason": "Hook Sentence + Emotional Hook = maximum impact"
+	},
+	{
+		"a": 31,
+		"b": 39,
+		"score": .88,
+		"reason": "Hook Sentence + Relatable Scenario = instant identification"
+	},
+	{
+		"a": 33,
+		"b": 34,
+		"score": .9,
+		"reason": "Curiosity Gap + Open Loop = layered suspense"
+	},
+	{
+		"a": 33,
+		"b": 37,
+		"score": .85,
+		"reason": "Curiosity Gap + Cliffhanger = series driver"
+	},
+	{
+		"a": 34,
+		"b": 37,
+		"score": .88,
+		"reason": "Open Loop + Cliffhanger = best series retention"
+	},
+	{
+		"a": 1,
+		"b": 4,
+		"score": .85,
+		"reason": "AIDA + WIIFM = benefit-first persuasion"
+	},
+	{
+		"a": 1,
+		"b": 7,
+		"score": .88,
+		"reason": "AIDA + Benefit-Driven Headlines = complete funnel"
+	},
+	{
+		"a": 2,
+		"b": 38,
+		"score": .87,
+		"reason": "PAS + Emotional Hook = pain-to-solution flow"
+	},
+	{
+		"a": 2,
+		"b": 41,
+		"score": .8,
+		"reason": "PAS + Direct CTA = clear ask after tension"
+	},
+	{
+		"a": 3,
+		"b": 7,
+		"score": .85,
+		"reason": "FAB + Benefit-Driven Headlines = benefit framing"
+	},
+	{
+		"a": 5,
+		"b": 8,
+		"score": .82,
+		"reason": "Bucket Brigades + Open Loops = mid-content retention"
+	},
+	{
+		"a": 11,
+		"b": 14,
+		"score": .9,
+		"reason": "Hero's Journey + Character Development = transformative arc"
+	},
+	{
+		"a": 11,
+		"b": 19,
+		"score": .85,
+		"reason": "Hero's Journey + Theme = purpose-driven story"
+	},
+	{
+		"a": 12,
+		"b": 18,
+		"score": .88,
+		"reason": "Conflict + Climax = tension-to-peak"
+	},
+	{
+		"a": 13,
+		"b": 16,
+		"score": .85,
+		"reason": "Narrative Arc + Pacing = well-paced story"
+	},
+	{
+		"a": 21,
+		"b": 25,
+		"score": .8,
+		"reason": "On-Camera Persona + Facial Expressions = authentic presence"
+	},
+	{
+		"a": 22,
+		"b": 28,
+		"score": .82,
+		"reason": "Vocal Projection + Filler Control = professional voice"
+	},
+	{
+		"a": 25,
+		"b": 26,
+		"score": .78,
+		"reason": "Facial Expressions + Gestures = body language sync"
+	},
+	{
+		"a": 41,
+		"b": 43,
+		"score": .85,
+		"reason": "Direct CTA + Social Proof = trusted ask"
+	},
+	{
+		"a": 41,
+		"b": 44,
+		"score": .82,
+		"reason": "Direct CTA + Urgency = accelerated decision"
+	},
+	{
+		"a": 42,
+		"b": 45,
+		"score": .88,
+		"reason": "Transitional CTA + Incentive = lead magnet flow"
+	},
+	{
+		"a": 43,
+		"b": 45,
+		"score": .85,
+		"reason": "Social Proof + Incentive = trust + reward"
+	},
+	{
+		"a": 46,
+		"b": 49,
+		"score": .85,
+		"reason": "Strong Opening + Audio Quality = pro impression"
+	},
+	{
+		"a": 47,
+		"b": 57,
+		"score": .88,
+		"reason": "Maintain Pace + Jump Cuts = fast retention"
+	},
+	{
+		"a": 50,
+		"b": 64,
+		"score": .82,
+		"reason": "Subtitles + Captions = sound-off audiences"
+	},
+	{
+		"a": 52,
+		"b": 62,
+		"score": .8,
+		"reason": "Segment Content + Storyboarding = structured production"
+	},
+	{
+		"a": 1,
+		"b": 2,
+		"score": -.3,
+		"reason": "AIDA and PAS overlap; using both dilutes the frame"
+	},
+	{
+		"a": 11,
+		"b": 15,
+		"score": -.4,
+		"reason": "Hero's Journey and Plot Twist = contradicting arcs"
+	},
+	{
+		"a": 11,
+		"b": 40,
+		"score": -.25,
+		"reason": "Hero's Journey (epic) vs Anecdotal Lead (small) = tonal clash"
+	},
+	{
+		"a": 32,
+		"b": 43,
+		"score": -.3,
+		"reason": "Pattern Interrupt + Social Proof = attention vs trust tension"
+	},
+	{
+		"a": 35,
+		"b": 39,
+		"score": -.25,
+		"reason": "Shock Value + Relatable Scenario = drama vs comfort"
+	},
+	{
+		"a": 10,
+		"b": 42,
+		"score": -.35,
+		"reason": "Urgency + Transitional CTA = push vs patience"
+	},
+	{
+		"a": 37,
+		"b": 61,
+		"score": -.2,
+		"reason": "Cliffhanger + Be Concise = open-ended vs complete"
+	},
+	{
+		"a": 4,
+		"b": 41,
+		"score": .7,
+		"reason": "WIIFM + Direct CTA = value-first then ask"
+	},
+	{
+		"a": 6,
+		"b": 7,
+		"score": .72,
+		"reason": "Power Words + Benefit Headlines = strong copy"
+	},
+	{
+		"a": 8,
+		"b": 33,
+		"score": .85,
+		"reason": "Open Loops + Curiosity Gap = layered suspense"
+	},
+	{
+		"a": 9,
+		"b": 59,
+		"score": .68,
+		"reason": "Snappy Sentences + End Screen CTA = punchy close"
+	},
+	{
+		"a": 24,
+		"b": 30,
+		"score": .65,
+		"reason": "Energy + Warm-up = consistent performance"
+	},
+	{
+		"a": 48,
+		"b": 56,
+		"score": .72,
+		"reason": "B-Roll + Music = cinematic support"
+	},
+	{
+		"a": 63,
+		"b": 55,
+		"score": .75,
+		"reason": "Platform-Specific + Optimal Length = native fit"
+	}
+];
+var term_compatibility_default = {
+	version,
+	description,
+	default_compatibility,
+	pairs
+};
+export { term_compatibility_default as default, default_compatibility, description, pairs, version };
+
+//# sourceMappingURL=term-compatibility.js.map
